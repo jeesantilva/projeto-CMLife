@@ -1,0 +1,123 @@
+
+:root{
+    --cor-de-fundo-primaria: #00cad1;
+    --cor-de-fundo-secundaria: #015a5c;
+    --cor-de-fundo-tabela-primaria: #f1f1f1;
+    --cor-de-fundo-tabela-secundaria: #cdcdcd;
+    --cor-de-borda: #03aeb4;
+    --cor-texto-principal: #0000008c;
+    --cor-texto-secundaria: #fff;
+    --cor-do-hover: #004b4c;
+}
+
+/* section{
+    border: 1px solid green;
+} */
+
+.links-secao-especialidades{
+    text-align: center;
+    padding: 40px;
+}
+
+.links-secao-especialidades a{
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: 500;
+    border-bottom: 2px solid var(--cor-de-borda);
+}
+
+.links-secao-especialidades a:hover{
+    color: var(--cor-do-hover);
+}
+
+.titulo-pagina-especialidades h1{
+    font-size: 22px;
+}
+
+.texto-secao-especialidades{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.texto-secao-especialidades h2{
+    font-size: 20px;
+}
+
+.texto-secao-especialidades p{
+    padding: 30px 150px;
+}
+
+.container-tabela{
+    display: flex;
+    width: 100%;
+    height: 260px;
+    padding: 0 10px;
+}
+
+.container-tabela .imagem-tabela{
+    width: 30%;
+}
+
+.container-tabela .imagem-tabela img{
+    width: 100%;
+    height: 100%;
+}
+
+.container-tabela .tabela{
+    width: 70%;
+    height: 100%;
+}
+
+table{
+    width: 100%;
+    height: 100%;
+    border-spacing: 0;
+
+}
+
+table th, table td{
+    padding: 10px;
+    text-align: center;
+}
+
+table tr th{
+    background-color: var(--cor-de-fundo-primaria);
+    color: var(--cor-texto-secundaria);
+
+}
+
+table tbody tr{
+    background-color: var(--cor-de-fundo-tabela-primaria);
+}
+
+table tbody tr:nth-of-type(odd){
+    background-color: var(--cor-de-fundo-tabela-secundaria);
+}
+
+@media screen and (max-width: 768px) {
+
+    .container-tabela{
+        justify-content: center;
+        height: auto;
+    }
+    .container-tabela .imagem-tabela{
+        display: none;
+    }
+
+    .container-tabela .tabela{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .texto-secao-especialidades p{
+        padding: 30px 10px;
+    }
+
+    .container-tabela{
+        padding: 0;
+    }
+}
